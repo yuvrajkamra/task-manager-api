@@ -1,7 +1,7 @@
 const mailgun = require("mailgun-js");
 const api_key=process.env.SEND_API_KEY;
 const DOMAIN ='sandbox8b156155ceba4b0a9b886c0a3d4f8bc6.mailgun.org';
-const mg = mailgun({apiKey: api_key, domain: DOMAIN});
+const mg = mailgun({apiKey:'11de00cde47ba15fef07b6e5f5d0025f-aff8aa95-92f2ab56', domain: DOMAIN});
 const sendWelcomeEmail = (email,name)=>{
     mg.messages().send({
         from: 'Excited User <singhy838@gmail.com>',
